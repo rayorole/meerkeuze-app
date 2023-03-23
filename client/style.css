@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: #5c5b5b;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: #fafafa;
+}
+
+.vraag {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button {
+  background: #fff;
+  border: 1px solid #5c5b5b;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+}

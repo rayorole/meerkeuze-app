@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meerkeuze App</title>
+  </head>
+  <body>
+    <fieldset>
+      <form action="#" method="POST" onsubmit="maakVraag()">
+        <legend><pre>Maak een nieuwe vraag</pre></legend>
+        <label for="vraag">Vraag</label>
+        <input required type="text" name="vraag" id="vraag" /><br /><br />
+
+        <label for="opties">Opties</label>
+        <textarea
+          oninput="maakOpties()"
+          required
+          placeholder="Gebruik een puntkomma ; om de opties te scheiden"
+          name="opties"
+          id="opties"
+          cols="30"
+          rows="10"
+        ></textarea
+        ><br /><br />
+        <label for="juiste">Juiste optie</label>
+        <select style="width: 200px" name="juiste" id="juiste">
+          <option disabled>Kies een optie</option>
+        </select>
+        <br /><br />
+        <button type="submit">Maak vraag</button>
+      </form>
+    </fieldset>
+
+    <div class="container">
+      <h2>Alle vragen</h2>
+
+      <div id="vragen"></div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
